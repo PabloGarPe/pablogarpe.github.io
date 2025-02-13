@@ -21,15 +21,12 @@ export const Header = () => {
 
   return (
     <header
-      className={`mx-auto w-full border-b transition-opacity duration-[0.15s] border-gray-50/0 ease-in-out flex-none sticky top-0 z-40 ${scrolled ? "backdrop-blur-lg shadow-md" : ""}`}
+      className={
+        `mx-auto w-full transition-opacity duration-[0.15s] ease-in-out flex-none sticky top-0 z-50 ${scrolled ? "backdrop-blur-[6px] shadow-sm shadow-gray-900 border-b border-gray-400" : ""}`}
     >
       <div
-        className={`absolute inset-0 transition-opacity `}
-        style={{
-          backgroundColor: scrolled
-            ? "rgba(0,0,0,0.1)"
-            : "transparent",
-        }}
+        className={`absolute z-0 transition-opacity duration-300 ease-in-out w-full h-full top-0 left-0
+           ${scrolled ? "scrolled" : ""}`}
       ></div>
       <div className="relative md:px-3 text-default md:grid md:grid-cols-[0.2fr_2fr_auto] px-3 py-3 w-full">
         <div className="flex justify-between md:jsutify-self-start">

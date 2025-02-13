@@ -12,3 +12,7 @@ html {
 body {
   color: #fff;
 }
+
+body .scrolled {
+  background-image: url("../public/img-noise-361x370.png");
+}
