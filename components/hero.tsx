@@ -1,5 +1,6 @@
 export const Hero = () => {
   return (
+    <>
     <section className="relative scroll-mt-[4.5rem]" id="home">
       <div className="absolute inset-0 pointer-events-none -z-[1]"></div>
       <div className="rmx-auto max-w-7xl relative md:px-6 text-default lg:py-20 md:py-16 px-4 py-12">
@@ -34,5 +35,11 @@ export const Hero = () => {
         </div>
       </div>
     </section>
+    <section className="h-screen" id="test-scroll">
+      <div className="flex items-center justify-center h-full">
+        <h2 className="text-2xl">Scroll Test Section</h2>
+      </div>
+    </section>
+    </>
   );
 };
