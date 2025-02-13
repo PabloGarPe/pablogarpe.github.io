@@ -26,6 +26,10 @@ export const Hero = () => {
                   confident I can quickly grow my skills and become a pillar in
                   any company.
                 </p>
+                <br />
+                <p>
+                  🗺️ Asturias, Spain
+                </p>
               </div>
               <div className="grid grid-cols-3 gap-5">
                 {/* TODO: Add social media links */}
@@ -33,11 +37,6 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section className="h-screen" id="test-scroll">
-      <div className="flex items-center justify-center h-full">
-        <h2 className="text-2xl">Scroll Test Section</h2>
       </div>
     </section>
     </>

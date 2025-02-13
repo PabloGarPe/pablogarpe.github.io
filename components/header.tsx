@@ -21,13 +21,13 @@ export const Header = () => {
 
   return (
     <header
-      className={`mx-auto w-full border-b transition-opacity duration-[0.15s] border-gray-50/0 ease-in-out flex-none sticky top-0 z-40 ${scrolled ? "backdrop-blur-md shadow-md" : ""}`}
+      className={`mx-auto w-full border-b transition-opacity duration-[0.15s] border-gray-50/0 ease-in-out flex-none sticky top-0 z-40 ${scrolled ? "backdrop-blur-lg shadow-md" : ""}`}
     >
       <div
         className={`absolute inset-0 transition-opacity `}
         style={{
           backgroundColor: scrolled
-            ? "rgba(255, 255, 255, 0.25)"
+            ? "rgba(0,0,0,0.1)"
             : "transparent",
         }}
       ></div>
