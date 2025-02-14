@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import { Header } from "@/components/header";
 import "./globals.css";
+import { Contact } from "@/components/contact";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${firaCode.variable} antialiased`}>
         <Header />
         <main>{children}</main>
+        <Contact />
       </body>
     </html>
   );
