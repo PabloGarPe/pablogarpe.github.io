@@ -21,8 +21,11 @@ export const Header = () => {
 
   return (
     <header
-      className={
-        `mx-auto w-full transition-opacity duration-[0.15s] ease-in-out flex-none sticky top-0 z-50 ${scrolled ? "backdrop-blur-[6px] shadow-sm shadow-gray-900 border-b border-gray-400" : ""}`}
+      className={`mx-auto w-full transition-opacity duration-[0.15s] ease-in-out flex-none sticky top-0 z-50 ${
+        scrolled
+          ? "backdrop-blur-[6px] shadow-sm shadow-gray-900 border-b border-gray-400"
+          : ""
+      }`}
     >
       <div
         className={`absolute z-0 transition-opacity duration-300 ease-in-out w-full h-full top-0 left-0

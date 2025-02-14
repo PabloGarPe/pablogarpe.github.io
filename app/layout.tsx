@@ -8,7 +8,6 @@ const firaCode = Fira_Code({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "My developer portfolio",
   description: "This is my developer portfolio",
@@ -21,11 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${firaCode.variable} antialiased`}
-      >
+      <body className={`${firaCode.variable} antialiased`}>
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

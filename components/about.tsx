@@ -3,7 +3,7 @@ export const About = () => {
     <>
       <section className="relative scroll-mt-[4.5rem]" id="info">
         <div className="absolute inset-0 pointer-events-none -z-[1]"></div>
-        <div className="rmx-auto w-full relative md:px-6 text-default lg:py-20 md:py-10 px-4 py-6">
+        <div className="rmx-auto w-full relative md:px-6 text-default lg:py-10 md:py-5 px-4 py-3">
           <div className="ml-auto max-w-7xl p-4">
             <div className="md:flex md:gap-10 md:justify-end">
               <div className="self-center md:w-1/2">
