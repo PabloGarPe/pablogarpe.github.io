@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio de Pablo García Pernas
 
-## Getting Started
+Bienvenido a mi portafolio web. Aquí podrás conocer más sobre mis proyectos, habilidades y experiencia en el desarrollo y diseño web.
 
-First, run the development server:
+## 🧑‍💻 Sobre Mí
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Soy un desarrollador y diseñador web apasionado por crear soluciones innovadoras y funcionales. Me especializo en tecnologías modernas y disfruto enfrentando nuevos desafíos que me permitan crecer profesionalmente.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologías y Herramientas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Lenguajes:** JavaScript, Python, HTML, CSS, TypeScript
+- **Frameworks y Librerías:** React, Next.js, Node.js, Express
+- **Bases de Datos:** MariaDB, SQLDeveloper, Firebase
+- **Herramientas:** Git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Proyectos Destacados
 
-## Learn More
+### 1. [MathTexPedia]
 
-To learn more about Next.js, take a look at the following resources:
+Página para alojar apuntes del doble grado de matemáticas e informática
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔗 [Ver Proyecto](https://mathtexpedia.web.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. [HorariosPCEO]
 
-## Deploy on Vercel
+Página para unir los dos horarios que tenemos con actualizaciones semanales de las mismas.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔗 [Ver Proyecto](https://horariospceo.web.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📫 Contacto
+
+- **Email:** [pablogarciapernas@gmail.com](mailto:pablogarciapernas@gmail.com)
+- **LinkedIn:** [linkedin.com/in/pablo-garc%C3%ADa-pernas-873630352/]([https://linkedin.com/in/tuusuario](https://www.linkedin.com/in/pablo-garc%C3%ADa-pernas-873630352/))
+- **Portafolio:** [pablogarpe.github.io]([https://tusitio.com](https://pablogarpe.github.io/))
+
+¡Gracias por visitar mi portafolio! 🚀
