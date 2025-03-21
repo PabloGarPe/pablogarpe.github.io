@@ -71,7 +71,7 @@ export const Header = () => {
             <li>
               <a
                 className="px-4 py-3 hover:bg-white hover:text-black hover:rounded-full hover:shadow-inner"
-                href="/#contact"
+                href="mailto:pablogarciapernas@gmail.com"
               >
                 Contact
               </a>
@@ -79,9 +79,12 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="md:flex md:flex-col hidden md:items-end md:justify-self-end">
-          <button className="bg-pink-500 hover:bg-pink-300 font-bold px-4 py-2 rounded-full text-white transition-colors">
+            <a href="/Curriculum.pdf"
+            download="Pablo_Garci_Curriculum.pdf"
+            className="bg-pink-500 hover:bg-pink-300 font-bold px-4 py-2 rounded-full text-white transition-colors"
+            >
             Resume
-          </button>
+            </a>
         </div>
       </div>
     </header>
