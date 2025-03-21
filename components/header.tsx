@@ -80,7 +80,7 @@ export const Header = () => {
         </nav>
         <div className="md:flex md:flex-col hidden md:items-end md:justify-self-end">
             <a href="/Curriculum.pdf"
-            download="Pablo_Garci_Curriculum.pdf"
+            download="Pablo_Garcia_Curriculum.pdf"
             className="bg-pink-500 hover:bg-pink-300 font-bold px-4 py-2 rounded-full text-white transition-colors"
             >
             Resume
