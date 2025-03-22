@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
   background-image: url("../public/img-noise-361x370.png");
   background-repeat: repeat;
@@ -23,5 +24,9 @@ main {
 }
 
 body .scrolled {
+  background-image: url("../public/img-noise-361x370.png");
+}
+
+.dropdown {
   background-image: url("../public/img-noise-361x370.png");
 }
