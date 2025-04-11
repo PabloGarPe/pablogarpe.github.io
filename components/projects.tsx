@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Project_right_img } from "./project_right_image";
 import { Project_left_img_mobile } from "./project_left_img_mobile";
 import { Project_left_img } from "./project_left_img";
