@@ -52,7 +52,7 @@ export const Projects = () => {
                 </div>
                 <div className="hidden md:grid md:grid-cols-2 mt-20 ">
                   <div className="flex flex-col items-center align-middle justify-center">
-                    <a href="https://mathtexpedia.web.app/" target="blank">
+                    <a href="https://horariospceo.web.app/" target="blank">
                     <img
                       src="/horariospceo.png"
                       alt="MathTexpedia project"
