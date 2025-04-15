@@ -1,9 +1,11 @@
 interface ProjectRightImgProps {
     url: string;
     img: string;
+    txt1: string;
+    txt2: string;
   }
 
-export const Project_right_img:React.FC<ProjectRightImgProps> = ({url, img}) => {
+export const Project_right_img:React.FC<ProjectRightImgProps> = ({url, img,txt1,txt2}) => {
     return (
         <div className="flex flex-col md:grid md:grid-cols-2 ">
                   <div className="flex flex-col items-center align-middle justify-center ">
@@ -20,13 +22,10 @@ export const Project_right_img:React.FC<ProjectRightImgProps> = ({url, img}) => 
                         </h3>
                       </div>
                       <p className="text-justify text-wrap mb-2">
-                        MathTexpedia is a web application that allows users to
-                        learn and practice math and software engineering.
+                        {txt1}
                       </p>
                       <p className="text-justify text-wrap">
-                        It is built with Next.js, Tailwind CSS, Nest.js and
-                        LaTex. The application is deployed in Render and hosted
-                        in Firebase.
+                        {txt2}
                       </p>
                     </div>
                   </div>

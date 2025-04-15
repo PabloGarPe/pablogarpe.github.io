@@ -1,9 +1,11 @@
 interface ProjectLeftImgMobileProps {
     url:string,
-    img: string
+    img: string,
+    txt1: string,
+    txt2: string
 }
 
-export const Project_left_img_mobile: React.FC<ProjectLeftImgMobileProps> = ({url, img}) => {
+export const Project_left_img_mobile: React.FC<ProjectLeftImgMobileProps> = ({url, img,txt1,txt2}) => {
     return(
     <div className="hidden md:grid md:grid-cols-2 mt-20 ">
                   <div className="flex flex-col items-center align-middle justify-center">
@@ -30,14 +32,10 @@ export const Project_left_img_mobile: React.FC<ProjectLeftImgMobileProps> = ({ur
                         </h3>
                       </div>
                       <p className="text-justify text-wrap mb-2">
-                        HorariosPCEO is a useful web application that allows me
-                        and my mates on my degree to check both schedules (with
-                        exams and classes) and make it update all the weeks.
+                       {txt1}
                       </p>
                       <p className="text-justify text-wrap">
-                        It is built with Next.js, Tailwind CSS and FastAPI. The
-                        application is deployed in Render and hosted in
-                        Firebase.
+                        {txt2}
                       </p>
                     </div>
                   </div>
