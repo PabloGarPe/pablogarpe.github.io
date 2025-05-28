@@ -3,8 +3,8 @@ import { getCollection } from 'astro:content';
 import Card from '@components/Card.astro';
 const projects = await getCollection('projects');
 ---
-<section class="projects flex flex-col items-center justify-center mt-10 mb-30">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pr-10 md:w-3/4 ml-10 md:ml-0">
+<section class="projects flex flex-col items-center justify-between mt-10 mb-30">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-10 md:w-3/4  align-middle">
         {projects.map((project) => (
             <Card
                 title={project.data.title}

@@ -28,6 +28,7 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
         <div
           onmouseenter={`showDialog("${item.data.name}","${item.data.level}" ,\`${item.body}\`)`}
           onmouseleave="hideDialog()"
+          onclick={`showDialog("${item.data.name}","${item.data.level}" ,\`${item.body}\`)`}
         >
           <Tag
             name={item.data.name}
@@ -41,7 +42,7 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
   </div>
     <dialog
     id="tagDialog"
-    class="relative w-full md:max-w-3/4 p-6 border"
+    class="relative w-full max-w-[70%] p-6 border"
     >
     </dialog>
 </section>
@@ -61,15 +62,15 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
 
   window.showDialog = (title, level, body) => {
     dialog.innerHTML = `
-    <div class="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 align-center">
-      <div class="items-start justify-start">
-        <h3 class="text-lg font-semibold text-start">${title}</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 align-center">
+      <div class="items-center justify-center md:items-start md:justify-start">
+        <h3 class="text-lg font-semibold text-center md:text-start">${title}</h3>
       </div>
       <div class="items-center justify-center">
         <p class="text-center">${level}</p>
       </div>
-      <div class="items-end justify-end">
-        <p class="text-end">${body}</p>
+      <div class="items-center justify-center md:items-end md:justify-end">
+        <p class="text-center md:text-end">${body}</p>
       </div>
     </div>
     `;
