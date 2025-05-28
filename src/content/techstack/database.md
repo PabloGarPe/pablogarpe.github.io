@@ -1,6 +1,6 @@
 ---
-name: "Java"
+name: "SQL"
 color: "#FFFFF"
 level: "Intermediate"
 ---
-SpringBoot
+Oracle DataBase and MariaDB

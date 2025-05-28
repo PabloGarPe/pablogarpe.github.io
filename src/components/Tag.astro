@@ -6,26 +6,10 @@ export interface Props {
     height?: string;
 }
 const { name, color, width, height }: Props = Astro.props;
-
-const darkenHexColor =(hex: string, amount: number = 0.2): string =>{
-  let color = hex.replace('#', '');
-
-  if (color.length === 3) {
-    color = color.split('').map((c) => c + c).join('');
-  }
-
-  const num = parseInt(color, 16);
-  const r = Math.max(0, Math.min(255, ((num >> 16) & 0xff) * (1 - amount)));
-  const g = Math.max(0, Math.min(255, ((num >> 8) & 0xff) * (1 - amount)));
-  const b = Math.max(0, Math.min(255, (num & 0xff) * (1 - amount)));
-
-  return `rgb(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)})`;
-}
-const borderColor = color ? darkenHexColor(color, 0.25) : 'currentColor';
 ---
 <span
     class={`inline-block ${width} ${height} text-center text-sm font-semibold px-3 py-1 border`}
-    style={`background-color: ${color ?? 'transparent'}; border-color: ${borderColor ?? 'currentColor'};`}
+    style={`background-color: ${color ?? 'transparent'};`}
 >
         {name}
 </span>

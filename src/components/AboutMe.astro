@@ -6,7 +6,7 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
 
 ---
 <section id="about-me">
-    <div class="md:max-w-1/2 flex flex-col items-center justify-center p-6">
+    <div class="md:max-w-3/4 flex flex-col items-center justify-center p-6">
         <h2 class="text-2xl font-semibold mb-4">About Me</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             {info.map((item) => (
@@ -15,30 +15,19 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
                     <p class="text-wrap">{item.body}</p>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <img src={item.data.img} alt={item.data.name + " image"} class="mt-4 rounded-lg" />
+                    <img src={item.data.img} alt={item.data.name + " image"} class="mt-4 w-1/2" />
                 </div>
             ))}
         </div>
     </div>
-<!-- Slider -->
-  <div class="relative overflow-hidden w-full md:max-w-1/2 h-10 px-6">
-    <div id="slider" class="absolute flex gap-4 animate-slide">
-      {stackItems.concat(stackItems).map((item, i) => (
+  <div class="relative w-full md:max-w-3/4 max-h-50 px-6 mb-6">
+    <div
+      id="slider"
+      class="flex-wrap flex flex-row gap-4 justify-center"
+    >
+      {stackItems.map((item) => (
         <div
-          onmouseenter={`showDialog("${item.data.name}", \`${item.body}\`)`}
-          onmouseleave="hideDialog()"
-        >
-          <Tag
-            name={item.data.name}
-            color={item.data.color ?? 'gray'}
-            width="w-32"
-            height="h-8"
-          />
-        </div>
-      ))}
-      {stackItems.concat(stackItems).map((item, i) => (
-        <div
-          onmouseenter={`showDialog("${item.data.name}", \`${item.body}\`)`}
+          onmouseenter={`showDialog("${item.data.name}","${item.data.level}" ,\`${item.body}\`)`}
           onmouseleave="hideDialog()"
         >
           <Tag
@@ -50,12 +39,12 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
         </div>
       ))}
     </div>
+  </div>
     <dialog
     id="tagDialog"
-    class="fixed top-50 left-1/2 -translate-x-1/2 z-50 bg-white border border-gray-300 shadow p-4 w-80"
+    class="relative w-full md:max-w-3/4 p-6 border"
     >
     </dialog>
-  </div>
 </section>
 
 <style>
@@ -70,21 +59,25 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
 
 <script type="module">
   const dialog = document.getElementById("tagDialog");
-  const slider = document.getElementById("slider");
 
-  window.showDialog = (title, body) => {
-    slider.classList.add("paused");
+  window.showDialog = (title, level, body) => {
     dialog.innerHTML = `
-    <div class="flex items-center justify-between">
-      <h3 class="text-lg font-semibold">${title}</h3>
-      <p class="text-sm">${body}</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 align-center">
+      <div class="items-start justify-start">
+        <h3 class="text-lg font-semibold text-start">${title}</h3>
+      </div>
+      <div class="items-center justify-center">
+        <p class="text-center">${level}</p>
+      </div>
+      <div class="items-end justify-end">
+        <p class="text-end">${body}</p>
+      </div>
     </div>
     `;
     dialog.show();
   };
 
   window.hideDialog = () => {
-    slider.classList.remove("paused");
     dialog.close();
   };
 </script>

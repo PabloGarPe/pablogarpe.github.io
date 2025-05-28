@@ -1,5 +1,6 @@
 ---
 name: "CSS"
-color: "#FFC0CB"
+color: "#FFFFF"
+level: "Advanced"
 ---
-Advace level
+Tailwind CSS, SASS

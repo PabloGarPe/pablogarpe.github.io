@@ -1,5 +1,6 @@
 ---
 name: "Python"
-color: "#3776AB"
+color: "#FFFFF"
+level: "Intermediate"
 ---
-Medium level
+Numpy, Pandas, TKinter, Django and FastAPI

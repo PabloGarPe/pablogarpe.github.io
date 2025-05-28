@@ -12,6 +12,7 @@ const techstackCollection = defineCollection({
   schema: z.object({
     name: z.string(),
     color: z.string().optional(),
+    level: z.enum(["Beginner", "Intermediate", "Advanced"]).optional(),
   }),
 });
 
