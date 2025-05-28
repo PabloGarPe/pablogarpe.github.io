@@ -2,8 +2,7 @@
 import { getCollection } from 'astro:content'
 import Tag from '@components/Tag.astro'
 const info = await getCollection('aboutme')
-const stackItems = await getCollection('techstack') // Make sure 'techstack' is defined in your content/config
-
+const stackItems = await getCollection('techstack')
 ---
 <section id="about-me">
     <div class="md:max-w-3/4 flex flex-col items-center justify-center p-6 mb-5">
@@ -62,7 +61,7 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
 
   window.showDialog = (title, level, body) => {
     dialog.innerHTML = `
-    <div class="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 align-center">
+    <div class="flex flex-row align-center justify-between gap-4 align-center">
       <div class="items-start justify-start">
         <h3 class="text-lg font-semibold text-start">${title}</h3>
       </div>

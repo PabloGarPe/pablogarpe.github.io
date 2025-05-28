@@ -16,7 +16,16 @@ const techstackCollection = defineCollection({
   }),
 });
 
+const projectsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    url: z.string().url()
+  })
+})
+
 export const collections = {
   aboutme: aboutmeCollection,
   techstack: techstackCollection,
+  projects: projectsCollection
 };
