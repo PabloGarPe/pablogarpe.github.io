@@ -8,7 +8,17 @@ import Footer from "@components/Footer.astro"
 
 <Layout>
 	<Header />
-	<AboutMe />
-	<Projects />
+	<div>
+		<AboutMe />
+		<Projects />
+	</div>
 	<Footer />
 </Layout>
+
+<style>
+	layout {
+		display: grid;
+		min-height: 100dvh;
+		grid-template-rows: auto 1fr auto;
+	}
+</style>
