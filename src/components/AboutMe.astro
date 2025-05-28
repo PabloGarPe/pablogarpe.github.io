@@ -6,7 +6,7 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
 
 ---
 <section id="about-me">
-    <div class="md:max-w-3/4 flex flex-col items-center justify-center p-6">
+    <div class="md:max-w-3/4 flex flex-col items-center justify-center p-6 mb-5">
         <h2 class="text-2xl font-semibold mb-4">About Me</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             {info.map((item) => (
@@ -15,7 +15,7 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
                     <p class="text-wrap">{item.body}</p>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <img src={item.data.img} alt={item.data.name + " image"} class="mt-4 w-1/2" />
+                    <img src={item.data.img} alt={item.data.name + " image"} class="mt-4 min-w-1/4 max-w-1/2" />
                 </div>
             ))}
         </div>
