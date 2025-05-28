@@ -7,7 +7,7 @@ export interface Props{
 const { title, description, url }: Props = Astro.props;
 ---
 <a href={url} target="_blank" rel="noopener noreferrer">
-    <button type="button" class="card-btn hover:scale-102 focus:ring-2 transition-transform duration-100 ease-in-out w-full min-h-56 cursor-pointer">
+    <button type="button" class="card-btn hover:scale-102 focus:ring-2 transition-transform duration-100 ease-in-out w-full h-full cursor-pointer">
         <h1 class="font-semibold text-xl uppercase">{title}</h1>
         <p class="pt-5">{description}</p>
         <p class="pt-10">{"You can click this button to go to " + url}</p>

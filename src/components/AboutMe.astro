@@ -2,11 +2,11 @@
 import { getCollection } from 'astro:content'
 import Tag from '@components/Tag.astro'
 const info = await getCollection('aboutme')
-const stackItems = await getCollection('techstack')
+const stackItems = await getCollection('techstack') // Make sure 'techstack' is defined in your content/config
+
 ---
 <section id="about-me">
     <div class="md:max-w-3/4 flex flex-col items-center justify-center p-6 mb-5">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             {info.map((item) => (
                 <div class="flex flex-col items-center justify-center">
@@ -14,7 +14,7 @@ const stackItems = await getCollection('techstack')
                     <p class="text-wrap">{item.body}</p>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <img src={item.data.img} alt={item.data.name + " image"} class="mt-4 min-w-1/4 max-w-1/2" />
+                    <img src={item.data.img} alt={item.data.name + " image"} class="mt-4 min-w-1/4 max-w-1/2 max-h-3/4" />
                 </div>
             ))}
         </div>
@@ -61,7 +61,7 @@ const stackItems = await getCollection('techstack')
 
   window.showDialog = (title, level, body) => {
     dialog.innerHTML = `
-    <div class="flex flex-row align-center justify-between gap-4 align-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 align-center">
       <div class="items-start justify-start">
         <h3 class="text-lg font-semibold text-start">${title}</h3>
       </div>
