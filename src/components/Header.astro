@@ -1,0 +1,73 @@
+---
+---
+<header class="min-height-16 flex flex-col justify-cneter items-center gap-1.5 lg:gap-0 lg:grid lg:grid-cols-3 sticky bg-bottom top-0 z-10 mx-10">
+    <div class="flex items-start">
+        <img src="/logo.svg" alt="Logo" class="w-12 h-12" />
+    </div>
+    <div class="flex items-center justify-center">
+        <div class="inline-block">
+                    <h1 class="text-2xl font-bold">Pablo García - Software Developer</h1>
+        </div>
+    </div>
+    <div class="flex items-end justify-end">
+        <nav>
+            <ul class="flex space">
+                <li class="mx-2"><a href="/">Home</a></li>
+                <li class="mx-2"><a href="#about-me">About</a></li>
+                <li class="mx-2"><a href="#">Projects</a></li>
+                <li class="mx-2"><a href="#">Contact</a></li>
+                <li class="mx-2"><a href="">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<script>
+    const header = document.querySelector('header')
+    if (header)
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('bg-white', 'backdrop-blur')
+            } else {
+                header.classList.remove('bg-white', 'backdrop-blur')
+            }
+        })
+</script>
+
+<style>
+    header {
+        align-items:center;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a:hover{
+        font-weight: bold;
+    }
+
+    h1 {
+        animation: typing 2s ,cursor .4s step-end infinite alternate;
+        padding-right: 5px;
+        border-right: 2px solid black;
+        white-space: nowrap;
+        width: 100%;
+        overflow:hidden;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+</style>

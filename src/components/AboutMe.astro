@@ -1,0 +1,90 @@
+---
+import { getCollection } from 'astro:content'
+import Tag from '@components/Tag.astro'
+const info = await getCollection('aboutme')
+const stackItems = await getCollection('techstack') // Make sure 'techstack' is defined in your content/config
+
+---
+<section id="about-me">
+    <div class="md:max-w-1/2 flex flex-col items-center justify-center p-6">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {info.map((item) => (
+                <div class="flex flex-col items-center justify-center">
+                    <h3 class="text-xl italic mb-2">{item.data.name}</h3>
+                    <p class="text-wrap">{item.body}</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <img src={item.data.img} alt={item.data.name + " image"} class="mt-4 rounded-lg" />
+                </div>
+            ))}
+        </div>
+    </div>
+<!-- Slider -->
+  <div class="relative overflow-hidden w-full md:max-w-1/2 h-10 px-6">
+    <div id="slider" class="absolute flex gap-4 animate-slide">
+      {stackItems.concat(stackItems).map((item, i) => (
+        <div
+          onmouseenter={`showDialog("${item.data.name}", \`${item.body}\`)`}
+          onmouseleave="hideDialog()"
+        >
+          <Tag
+            name={item.data.name}
+            color={item.data.color ?? 'gray'}
+            width="w-32"
+            height="h-8"
+          />
+        </div>
+      ))}
+      {stackItems.concat(stackItems).map((item, i) => (
+        <div
+          onmouseenter={`showDialog("${item.data.name}", \`${item.body}\`)`}
+          onmouseleave="hideDialog()"
+        >
+          <Tag
+            name={item.data.name}
+            color={item.data.color ?? 'gray'}
+            width="w-32"
+            height="h-8"
+          />
+        </div>
+      ))}
+    </div>
+    <dialog
+    id="tagDialog"
+    class="fixed top-50 left-1/2 -translate-x-1/2 z-50 bg-white border border-gray-300 shadow p-4 w-80"
+    >
+    </dialog>
+  </div>
+</section>
+
+<style>
+    section {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        width: 100%;
+    }
+</style>
+
+<script type="module">
+  const dialog = document.getElementById("tagDialog");
+  const slider = document.getElementById("slider");
+
+  window.showDialog = (title, body) => {
+    slider.classList.add("paused");
+    dialog.innerHTML = `
+    <div class="flex items-center justify-between">
+      <h3 class="text-lg font-semibold">${title}</h3>
+      <p class="text-sm">${body}</p>
+    </div>
+    `;
+    dialog.show();
+  };
+
+  window.hideDialog = () => {
+    slider.classList.remove("paused");
+    dialog.close();
+  };
+</script>

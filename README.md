@@ -1,36 +1,48 @@
-# Portafolio de Pablo García Pernas
+# Astro Starter Kit: Basics
 
-Bienvenido a mi portafolio web. Aquí podrás conocer más sobre mis proyectos, habilidades y experiencia en el desarrollo y diseño web.
+```sh
+npm create astro@latest -- --template basics
+```
 
-## 🧑‍💻 Sobre Mí
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-Soy un desarrollador y diseñador web apasionado por crear soluciones innovadoras y funcionales. Me especializo en tecnologías modernas y disfruto enfrentando nuevos desafíos que me permitan crecer profesionalmente.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🛠️ Tecnologías y Herramientas
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-- **Lenguajes:** JavaScript, Python, HTML, CSS, TypeScript
-- **Frameworks y Librerías:** React, Next.js, Node.js, Express
-- **Bases de Datos:** MariaDB, SQLDeveloper, Firebase
-- **Herramientas:** Git
+## 🚀 Project Structure
 
-## 🚀 Proyectos Destacados
+Inside of your Astro project, you'll see the following folders and files:
 
-### 1. [MathTexPedia]
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-Página para alojar apuntes del doble grado de matemáticas e informática
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-🔗 [Ver Proyecto](https://mathtexpedia.web.app/)
+## 🧞 Commands
 
-### 2. [HorariosPCEO]
+All commands are run from the root of the project, from a terminal:
 
-Página para unir los dos horarios que tenemos con actualizaciones semanales de las mismas.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-🔗 [Ver Proyecto](https://horariospceo.web.app/)
+## 👀 Want to learn more?
 
-## 📫 Contacto
-
-- **Email:** [pablogarciapernas@gmail.com](mailto:pablogarciapernas@gmail.com)
-- **LinkedIn:** [linkedin.com/in/pablo-garc%C3%ADa-pernas-873630352/]([https://linkedin.com/in/tuusuario](https://www.linkedin.com/in/pablo-garc%C3%ADa-pernas-873630352/))
-- **Portafolio:** [pablogarpe.github.io]([https://tusitio.com](https://pablogarpe.github.io/))
-
-¡Gracias por visitar mi portafolio! 🚀
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
