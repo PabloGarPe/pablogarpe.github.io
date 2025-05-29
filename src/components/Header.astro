@@ -6,7 +6,7 @@
     </div>
     <div class="flex items-center justify-center">
         <div class="inline-block">
-                    <h1 class="text-2xl font-bold">Pablo García - Software Developer</h1>
+                    <h1 class="text-2xl font-bold dark:border-white">Pablo García - Software Developer</h1>
         </div>
     </div>
     <div class="flex items-end justify-end lg:pr-5">
@@ -98,11 +98,14 @@
     h1 {
         animation: typing 2s ,cursor .4s step-end infinite alternate;
         padding-right: 5px;
-        border-right: 2px solid black;
+        border-right: 2px solid var(--border-color);
         white-space: nowrap;
         width: 100%;
         overflow:hidden;
     }
+
+
+
     @keyframes typing {
         from {
             width: 0;
