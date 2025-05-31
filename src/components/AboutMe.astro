@@ -42,7 +42,7 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
   </div>
     <dialog
     id="tagDialog"
-    class="relative w-full max-w-[70%] p-6 border dark:bg-gray-900 dark:text-white"
+    class="relative w-full max-w-[90%] md:max-w-[71%] p-6 border dark:bg-gray-900 dark:text-white"
     >
     </dialog>
 </section>
@@ -57,11 +57,11 @@ const stackItems = await getCollection('techstack') // Make sure 'techstack' is 
     }
 
     #tagDialog {
-        animation: fadeIn 1s ease-in-out;
+        animation: fadeIn 0.5s ease-in-out;
         transition: opacity steps(10, end), transform 0.3s ease-in-out;
         backdrop-filter: blur(5px);
         transform: scale(1);
-        
+        margin: auto;
     }
     
     @keyframes fadeIn {
