@@ -1,5 +1,8 @@
 name: NodeJS with Webpack
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ "master" ]
@@ -16,6 +19,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Configure git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
