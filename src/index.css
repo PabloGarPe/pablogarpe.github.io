@@ -121,12 +121,11 @@ header {
     place-self: center;
     display: grid;
     grid-template-columns: auto 1fr;
-    background-color: var(--text-color);
+    background-color: rgb(from var(--text-color) r g b / 0.5);
     color: var(--background-color);
     padding: 20px;
     text-align: center;
-    opacity: 0.75;
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -137,7 +136,7 @@ header {
 header nav {
     justify-self: end;
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: flex;
     gap: 1.5rem;
     opacity: 1;
@@ -150,6 +149,20 @@ header nav {
     opacity: 1;
 }
 
-main {
-    padding-top: 120px;
+
+section.hero {
+    min-height: 600px;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.picture {
+    max-height: 300px;
+    width: auto;
+    border-radius: 15px;
+    justify-self: center;
+    align-self: center;
 }

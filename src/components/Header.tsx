@@ -38,15 +38,15 @@ const Header = () => {
 export default Header
 
 const handle = {
-    width: 25,
-    height: 25,
+    width: 15,
+    height: 15,
     backgroundColor: "var(--link-color)",
     borderRadius: "50%",
 }
 
 const container = {
-    width: 100,
-    height: 45,
+    width: 75,
+    height: 35,
     backgroundColor: "var(--background-color)",
     borderRadius: 50,
     cursor: "pointer",

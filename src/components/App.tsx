@@ -1,7 +1,9 @@
+import Hero from "@/assets/Hero"
+
 const App = () => {
     return(
         <main>
-            <div>APP</div>
+            <Hero />
         </main>
     )
 }
