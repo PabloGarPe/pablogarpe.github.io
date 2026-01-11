@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <section className="hero" id="about">
                 <motion.img 
-                    src="../../public/image.webp" 
+                    src="/image.webp" 
                     alt="Profile Picture"
                     className="picture"
                     whileHover={{ scale: 1.1 }}
