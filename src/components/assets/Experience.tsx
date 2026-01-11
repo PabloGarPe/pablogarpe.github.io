@@ -12,9 +12,11 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 >
-                {exp.experience.map((job, index) => {
-                    return <Job key={index} id={index} name={job.name} start={new Date(job.start)} role={job.role} description={job.description} />
-                })}
+                <div className="experience-container">
+                    {exp.experience.map((job, index) => {
+                        return <Job key={index} id={index} name={job.name} start={new Date(job.start)} role={job.role} description={job.description} />
+                    })}
+                </div>
             </motion.div>
         </section>
     )

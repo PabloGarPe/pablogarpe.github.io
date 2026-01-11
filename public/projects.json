@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "Mathtexpedia",
+            "description": "A comprehensive platform for learning and practicing mathematical.",
+            "technologies": ["React", "TypeScript", "CSS", "Tailwind", "Node.js", "Supabase", "NestJS"],
+            "link": "https://mathtexpedia.es",
+            "img": "/mathtexpedia.png",
+            "alt": "Mathtexpedia Screenshot"
+        },
+        {
+            "title": "HorariosPCEO",
+            "description": "An institutional web application for viewing class schedules.",
+            "technologies": ["React", "TypeScript", "CSS", "Tailwind","Node.js", "MariaDB", "NestJS"],
+            "link": "https://horariospceo.web.app",
+            "img": "/horariospceo.png",
+            "alt": "HorariosPCEO Screenshot"
+        },
+        {
+            "title": "PCEO Dashboard",
+            "description": "An institutional web application for managing student schedules.",
+            "technologies": ["React", "TypeScript", "CSS", "Tailwind","Node.js", "MariaDB", "NestJS"],
+            "link": "https://pceo-dashboard.web.app",
+            "img": "/pceodashboard.png",
+            "alt": "PCEO Dashboard Screenshot"
+        }
+    ]
+}
